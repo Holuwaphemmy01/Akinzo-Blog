@@ -1,9 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
+
 
 const Login = () => {
 
-    const handleSubmit = async (e)=>{
+    const [email,  setEmail] = useState('')
+    const [password,  setPassword] = useState('')
 
+
+    const handleSubmit = async (e)=>{
+        e.preventDefault()
     }
   return (
     <div className='flex items-center justify-center h-screen'>
@@ -19,13 +25,15 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
                 <div className='flex flex-col'>
                     <label>Email</label>
-                    <input type="email" required placeholder='your email id'
+                    <input onChange={e=>setEmail(e.target.value)} value={email}
+                    type="email" required placeholder='your email id'
                     className='border-b-2 border-gray-300 p-2 outline-none mb-6'/>
 
                 </div>
                 <div className='flex flex-col'>
                     <label>Password</label>
-                    <input type="email" required placeholder='your password'
+                    <input onChange={e=>setPassword(e.target.value)} value={password}
+                    type="email" required placeholder='your password'
                     className='border-b-2 border-gray-300 p-2 outline-none mb-6'/>
 
                 </div>
