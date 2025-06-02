@@ -12,7 +12,7 @@ const BlogTableItem = ({blog, fetchBlog, index}) => {
         <td className='px-2 py-4'> {title} </td>
         <td className='px-2 py-4 max-sm:hidden'> {BlogDate.toDateString()} </td>
         <td className='px-2 py-4 max-sm:hidden' > 
-            <p className='{`${blog.isPublished ? "text-green-600" : "text-orange-700" }`}'>
+            <p className={`${blog.isPublished ? "text-green-600" : "text-orange-700" }`}>
               {blog.isPublished ? 'Published' : 'Unpublished'} </p>
         </td>
         <td className='px-2 py-4 flex text-xs gap-3'>
