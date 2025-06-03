@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import { useAppContext } from '../context/AppContext';
 
 const NavBar = () => {
-    // const navigate = useNavigate();
     const {navigate, token} = useAppContext()
 
   return (
