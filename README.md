@@ -1,4 +1,4 @@
-# Akimzo Blog Platform
+# Akinzo Blog Platform
 
 A full-featured blogging platform built with the MERN stack (MongoDB, Express.js, React, Node.js).  
 Features integrated AI-powered content generation and cloud image storage using [ImageKit.io](https://imagekit.io/).
