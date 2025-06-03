@@ -13,7 +13,7 @@ await connectDB()
 app.use(cors())
 app.use(express.json())
 
-app.get('/, (req, res)=> res.send("API is working")')
+app.get('/', (req, res)=> res.send("API is working"))
 app.get('/admin', (req, res)=> res.send('working'))
 app.use('/api/admin', adminRouter)
 app.use('/api/blog', blogRouter)
